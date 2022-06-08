@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/typescript-vite-tasksList/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/typescript-vite-tasksList/assets/index.64e00795.js"></script>
+    <link rel="stylesheet" href="/typescript-vite-tasksList/assets/index.84ade952.css">
+  </head>
+  <body class="bg-zinc-900 text-white">
+    <div class="flex justify-center items-center h-screen gap-x-5">
+      <div>
+        <h1 class="text-2xl font-bold mb-3 text-center">Tasks</h1>
+        <form
+          action=""
+          id="taskForm"
+          class="flex flex-col bg-zinc-700 p-3 rounded-md max-w-md"
+        >
+          <label for="title" class="block">Title</label>
+          <input
+            type="text"
+            class="px-2 py-2 bg-zinc-800 text-white rounded-md mb-3"
+            name="title"
+            placeholder="Write a title"
+          />
+
+          <label for="description" class="block">Description:</label>
+          <textarea
+            name="description"
+            rows="3"
+            class="px-2 py-2 bg-zinc-800 text-white rounded-md mb-4"
+            placeholder="Write a description"
+          ></textarea>
+          <button class="bg-amber-600 rounded-md hover:bg-amber-500">
+            Save
+          </button>
+        </form>
+      </div>
+
+      <div
+        id="taskList"
+        class="max-w-md w-full p-10 overflow-y-scroll h-3/5"
+      ></div>
+    </div>
+    
+  </body>
+</html>
